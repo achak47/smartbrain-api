@@ -38,7 +38,7 @@ app.get('/profile/:id', (req,res)=>{ profile.userprofile(req,res,db) })
 
 app.put('/image' , (req,res)=>{ image.userimage(req,res,db)})
 app.post('/imageUrl' , (req,res)=>{ image.apicall(req,res)})
-app.listen(5000 , ()=> {
+app.listen(process.env.PORT||5000 , ()=> {
     console.log("App is running") ;
   }) ;
 //We can use environment variables for the port , in order to make it dynamic
