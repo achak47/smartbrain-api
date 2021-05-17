@@ -1,6 +1,8 @@
 const Clarifai = require('clarifai') ;
 const app = new Clarifai.App({
     apiKey: 'f656cc73e40844d5a5d984cc88c3d102'
+    //For security purposes we can create a config var from heroku settings and store the API key with a specefic name
+    // Then here we must write process.env.NAME to access it .
    });
 const apicall = (req,res)=>{
    app.models.predict('a403429f2ddf4b49b307e318f00e528b' , req.body.input)
