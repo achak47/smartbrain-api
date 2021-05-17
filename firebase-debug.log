@@ -1,0 +1,109 @@
+[debug] [2021-05-17T09:20:27.596Z] ----------------------------------------------------------------------
+[debug] [2021-05-17T09:20:27.598Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\anura\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-05-17T09:20:27.598Z] CLI Version:   9.10.2
+[debug] [2021-05-17T09:20:27.598Z] Platform:      win32
+[debug] [2021-05-17T09:20:27.598Z] Node Version:  v14.16.1
+[debug] [2021-05-17T09:20:27.599Z] Time:          Mon May 17 2021 14:50:27 GMT+0530 (India Standard Time)
+[debug] [2021-05-17T09:20:27.599Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-17T09:20:27.604Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-17T09:20:27.604Z] > authorizing via signed-in user (anurag.ncp@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\anura\smartbrain-api
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-05-17T09:21:14.983Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-05-17T09:21:15.865Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-05-17T09:21:15.865Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project smart-brain-face-detection (Smart Brain-face detection) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2021-05-17T09:22:55.722Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-05-17T09:22:55.723Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-17T09:22:56.173Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Mon, 17 May 2021 09:22:56 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-17T09:22:56.189Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/smart-brain-face-detection/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-05-17T09:22:58.470Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 17 May 2021 09:22:59 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2021-05-17T09:22:58.473Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/smart-brain-face-detection/services/firebasedatabase.googleapis.com:enable  
+ 
+[debug] [2021-05-17T09:23:00.709Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 17 May 2021 09:23:01 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-17T09:23:10.710Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/smart-brain-face-detection/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-05-17T09:23:12.876Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 17 May 2021 09:23:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2021-05-17T09:23:12.880Z] > refreshing access token with scopes: []
+[debug] [2021-05-17T09:23:12.880Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-17T09:23:13.265Z] <<< HTTP RESPONSE 200 {"date":"Mon, 17 May 2021 09:23:14 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-17T09:23:13.282Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/smart-brain-face-detection [none]
+[debug] [2021-05-17T09:23:14.149Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/smart-brain-face-detection 200
+[debug] [2021-05-17T09:23:14.149Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/smart-brain-face-detection {"projectId":"smart-brain-face-detection","projectNumber":"498789382148","displayName":"Smart Brain-face detection","name":"projects/smart-brain-face-detection","resources":{"hostingSite":"smart-brain-face-detection"},"state":"ACTIVE"}
+[debug] [2021-05-17T09:23:32.120Z] ----------------------------------------------------------------------
+[debug] [2021-05-17T09:23:32.122Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\anura\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-05-17T09:23:32.122Z] CLI Version:   9.10.2
+[debug] [2021-05-17T09:23:32.122Z] Platform:      win32
+[debug] [2021-05-17T09:23:32.122Z] Node Version:  v14.16.1
+[debug] [2021-05-17T09:23:32.123Z] Time:          Mon May 17 2021 14:53:32 GMT+0530 (India Standard Time)
+[debug] [2021-05-17T09:23:32.123Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-17T09:23:32.128Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-17T09:23:32.128Z] > authorizing via signed-in user (anurag.ncp@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\anura\smartbrain-api
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-05-17T09:24:08.861Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-05-17T09:24:09.830Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-05-17T09:24:09.831Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project smart-brain-face-detection (Smart Brain-face detection) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2021-05-17T09:24:12.837Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-05-17T09:24:12.837Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-17T09:24:13.340Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 17 May 2021 09:24:14 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-17T09:24:13.361Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/smart-brain-face-detection/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-05-17T09:24:15.366Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 17 May 2021 09:24:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2021-05-17T09:24:15.370Z] > refreshing access token with scopes: []
+[debug] [2021-05-17T09:24:15.370Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-17T09:24:15.781Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 17 May 2021 09:24:16 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-17T09:24:15.799Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/smart-brain-face-detection [none]
+[debug] [2021-05-17T09:24:16.547Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/smart-brain-face-detection 200
+[debug] [2021-05-17T09:24:16.548Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/smart-brain-face-detection {"projectId":"smart-brain-face-detection","projectNumber":"498789382148","displayName":"Smart Brain-face detection","name":"projects/smart-brain-face-detection","resources":{"hostingSite":"smart-brain-face-detection"},"state":"ACTIVE"}
